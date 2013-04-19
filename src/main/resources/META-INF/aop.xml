@@ -1,0 +1,14 @@
+<!DOCTYPE aspectj PUBLIC
+    "-//AspectJ//DTD 1.5.0//EN"
+    "http://www.eclipse.org/aspectj/dtd/aspectj_1_5_0.dtd">
+
+<aspectj>
+
+    <!-- http://www.eclipse.org/aspectj/doc/released/devguide/ltw-configuration.html -->
+    <weaver options="-verbose -showWeaveInfo">
+        <include within="example.weaver.*"/>
+    </weaver>
+    <aspects>
+            <aspect name="example.weaver.MyListEnhancingAspect"/>
+     </aspects>
+</aspectj>
