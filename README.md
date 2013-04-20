@@ -44,3 +44,11 @@ Sample output:
     java.lang.SecurityException: No toString() for you!!! ;)
         at example.weaver.MyListEnhancingAspect.replaceListHolderToString(MyListEnhancingAspect.java:36)
         at example.weaver.ExampleMain.main(ExampleMain.java:24)
+        
+# License
+
+Creative Commons CC0 1.0 Universal 
+
+See: http://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+Noah Zucker (nzucker@gmail.com / [@noahlz](http://twitter.com/noahlz))
