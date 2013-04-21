@@ -3,14 +3,21 @@ Weaver Demo
 
 Basic example of java.lang.instrument and AspectJ Weaver.
 
+Requirements
+------------
+
+Builds with [Apache Maven](http://maven.apache.org).
+
 Demo Instrument
 ---------------
 
 This is a trivial example of the java.lang.instrument package.
 
-Sample output:
+Build and run:
 
     mvn clean package exec:exec -Pdemo-instrument
+
+Sample output:
 
     0 [main] INFO example.instrument.MyJavaAgent - in premain()
     16 [main] INFO example.instrument.MyClassFileTransformer - Got to MyClassFileTransformer.transform()
@@ -27,9 +34,11 @@ Demo AspectJ Weaver
 
 This is a functional example of the AspectJ Weaver library.
 
-Sample output:
+Build and run:
 
     mvn clean package exec:exec -Pdemo-weaver
+
+Sample output:
 
     [AppClassLoader@fabe9] info AspectJ Weaver Version 1.6.10 built on Friday Oct 22, 2010 at 03:50:26 GMT
     [AppClassLoader@fabe9] info register classloader sun.misc.Launcher$AppClassLoader@fabe9
